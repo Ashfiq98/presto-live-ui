@@ -5,12 +5,25 @@ body {
 
 /* common  */
 .container {
-    width: 1410px;
-    height: 680px;
-    margin-top: 90px;
-    margin-left: 216px;
-    background-color: rgb(201, 188, 188);
+
+    width: 1008px;
+    height: 678.6px;
+    top: 90px;
+    left: 216px;
     gap: 30px;
+    opacity: 0px;
+    max-width: 1528px;
+    /* width: 100%; */
+    padding: 30px 30px;
+    margin: 20px auto;
+    /* background: rgb(255, 243, 243); */
+}
+
+.airtrip-second,
+.airtrip-third,
+.conversion-chart {
+    background: #FFFFFF;
+    border-radius: 10px;
 }
 
 /* common */
@@ -73,7 +86,7 @@ nav {
     display: flex;
     width: 116px;
     height: 32px;
-    background-color: yellow;
+    /* background-color: yellow; */
     gap: 10px;
 }
 
@@ -115,7 +128,7 @@ nav {
 .right-airtrip {
     width: 1284px;
     height: 36px;
-    background-color: blue;
+    /* background-color: blue; */
     gap: 6px;
     display: flex;
     /* Use flexbox for centering */
@@ -138,7 +151,7 @@ nav {
     text-align: left;
     text-underline-position: from-font;
     text-decoration-skip-ink: none;
-    background: #475467;
+    /* background: #475467; */
 
 
 }
@@ -146,13 +159,271 @@ nav {
 
 /* airtrip-second */
 .airtrip-second {
+    display: flex;
     width: 100%;
     height: 250px;
     border-radius: 12px;
-    background-color: black;
+
     margin-top: 30px;
     margin-bottom: 30px;
 }
 
+.website-demo {
+    display: flex;
+    width: 430px;
+    height: 249.6px;
+    background: black;
+    color: white;
+    border-radius: 9.6px 0px 0px 9.6px;
+}
+
+.site {
+    width: 708px;
+    height: 249.6px;
+    padding: 10px 20px 5px 20px;
+    gap: 15px;
+    opacity: 0px;
+    /* background: red; */
+
+}
+
+.site-header {
+    display: flex;
+    width: 668pxpx;
+    height: 36px;
+    gap: 0px;
+    justify-content: space-between;
+    opacity: 0px;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+    /* box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2); */
+}
+
+/* .horizontal-border {
+    width: 668px;
+    height: 0px;
+    gap: 0px;
+    border: 1px 0px 0px 0px;
+    opacity: 0px;
+    border: 1px solid #EAECF0
+} */
+
+.website {
+    display: flex;
+    justify-content: space-between;
+
+    width: 158px;
+    height: 28px;
+    gap: 10px;
+    opacity: 0px;
+
+}
+
+.website p {
+    width: 56px;
+    height: 28px;
+    gap: 0px;
+    opacity: 0px;
+
+    font-family: Inter;
+    font-size: 18px;
+    font-weight: 600;
+    line-height: 28px;
+    text-align: left;
+    text-underline-position: from-font;
+    text-decoration-skip-ink: none;
+
+}
+
+.website a {
+    width: 73px;
+    height: 20px;
+    gap: 0px;
+    opacity: 0px;
+
+    font-family: Inter;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 20px;
+    text-align: left;
+    text-underline-position: from-font;
+    text-decoration-skip-ink: none;
+
+
+
+}
+
+.website>section {
+    display: flex;
+    align-items: center;
+    color: #667085;
+}
+
+.site-btn {
+    display: flex;
+    width: 182px;
+    height: 36px;
+    gap: 10px;
+    opacity: 0px;
+
+}
+
+.edit-btn img {
+    width: 12.5px;
+    height: 12.5px;
+    top: 3.82px;
+    left: 3.68px;
+    gap: 0px;
+    border: 1.67px 0px 0px 0px;
+    opacity: 0px;
+    align-items: center;
+    margin-right: 10px;
+}
+
+.edit-btn {
+    display: flex;
+    /* justify-content: space-between; */
+    width: 142px;
+    height: 36px;
+    padding: 8px 14px 8px 14px;
+    gap: 8px;
+    border-radius: 8px 8px 8px 8px;
+    border: 1px 0px 0px 0px;
+    opacity: 0px;
+    background: #2AD8A7;
+    border: 1px solid #2AD8A7;
+    color: white;
+    cursor: pointer;
+}
+
+.more-btn {
+    padding-top: 5px;
+    width: 30px;
+    height: 30px;
+    gap: 10px;
+    border-radius: 6px 0px 0px 0px;
+    opacity: 0px;
+    border: none;
+    background: none;
+    cursor: pointer;
+    ;
+}
+
+.more-btn img {
+    width: 22.24px;
+    height: 22.24px;
+    gap: 0px;
+    opacity: 0px;
+
+}
+
+.site-progress {
+    width: 668px;
+    height: 20px;
+    gap: 20px;
+    opacity: 0px;
+
+}
+
+.site-progress p {
+    width: 90px;
+    height: 20px;
+    gap: 0px;
+    opacity: 0px;
+    font-family: Inter;
+    font-size: 14px;
+    font-weight: 600;
+    line-height: 20px;
+    text-align: left;
+    text-underline-position: from-font;
+    text-decoration-skip-ink: none;
+
+
+}
+
+.progress-container {
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+    max-width: 600px;
+    padding: 24px;
+}
+
+.progress-header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 20px;
+}
+
+.progress-title {
+    font-size: 16px;
+    font-weight: 500;
+    color: #111827;
+}
+
+.progress-count {
+    font-size: 14px;
+    color: #6B7280;
+}
+
+.progress-bar {
+    width: 100%;
+    height: 8px;
+    background: #F3F4F6;
+    border-radius: 4px;
+    margin-bottom: 24px;
+}
+
+.progress-fill {
+    width: 57%;
+    /* 4/7 ≈ 57% */
+    height: 100%;
+    background: #10B981;
+    border-radius: 4px;
+}
+
+.tasks-list {
+    display: grid;
+    gap: 12px;
+}
+
+.task-item {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    font-size: 14px;
+}
+
+.task-completed {
+    color: #10B981;
+}
+
+.task-pending {
+    color: #6B7280;
+    background: #F3F4F6;
+    padding: 4px 12px;
+    border-radius: 16px;
+}
+
+/* Checkmark styles */
+.checkmark {
+    width: 16px;
+    height: 16px;
+    border-radius: 50%;
+    background: #10B981;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    font-size: 12px;
+}
+
+/* Pending circle styles */
+.pending-circle {
+    width: 16px;
+    height: 16px;
+    border-radius: 50%;
+    background: #F3F4F6;
+}
+
 /* airtrip-third */
+
 /* Analytical Grid End */
