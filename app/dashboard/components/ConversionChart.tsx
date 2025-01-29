@@ -43,9 +43,12 @@ const ConversionChart: React.FC = () => {
     };
 
     return (
-        <div className="container conversion-chart">
-            <h1>Conversion Rate <img src="conversion-icon.svg" alt="" /></h1>
-            <LineChart data={data} options={options} />
+        <div className="container">
+            <div className="conversion-chart">
+                <h1>Conversion Rate <img src="conversion-icon.svg" alt="" /></h1>
+                <LineChart data={data} options={options} />
+
+            </div>
         </div>
     );
 };

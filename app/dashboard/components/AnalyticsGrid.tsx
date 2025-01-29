@@ -26,8 +26,32 @@ export default function AnalyticsGrid({ }: Props) {
 
             {/* second part of airtrip */}
             <div className="airtrip-second">
-                <div className="website-demo">
+                {/* <div className="website-demo">
                     <img src="demo-home.png" width='100%' height='100%' alt="" />
+                </div> */}
+                <div className="website-demo">
+                    <div className="carousel">
+                        <div className="carousel-inner">
+                            <div className="carousel-slide active">
+                                <img src="demo-home.png"alt="Demo 1" />
+                            </div>
+                            <div className="carousel-slide">
+                                <img src="demo-home.png" alt="Demo 2" />
+                            </div>
+                            <div className="carousel-slide">
+                                <img src="demo-home.png" alt="Demo 3" />
+                            </div>
+                        </div>
+
+                        <button className="carousel-button prev">❮</button>
+                        <button className="carousel-button next">❯</button>
+
+                        <div className="carousel-controls">
+                            <div className="carousel-dot active"></div>
+                            <div className="carousel-dot"></div>
+                            <div className="carousel-dot"></div>
+                        </div>
+                    </div>
                 </div>
                 <div className="site">
                     <div className="site-header">
@@ -49,75 +73,189 @@ export default function AnalyticsGrid({ }: Props) {
                         </div>
 
                     </div>
-                    {/* <section className='horizontal-border'>
-                    
-                    </section> */}
-                    {/* <div className="site-progress">
+                    <hr className='horizontal-border' />
 
-                    </div>
-                    <div className="site-details">
-                        <ul>
-                            <li></li>
-                            <li></li>
-                            <li></li>
-                            <li></li>
-                        </ul>
-                        <ul>
-                            <li></li>
-                            <li></li>
-                            <li></li>
-                        </ul>
-                    </div> */}
+                    <div className="site-progress-details">
+                        <div className="progress-bar-details">
+                            <p>Site progress</p>
+                            <div className="progress-bar">
+                                <section className="progress">
 
-                    <div className="progress-container">
-                        <div className="progress-header">
-                            <div className="progress-title">Site progress</div>
-                            <div className="progress-count">4/7 Completed</div>
+                                </section>
+                                {/* <section className='remaining'>
+
+                           </section> */}
+                            </div>
+                            <p>4/7 completed</p>
                         </div>
-
-                        <div className="progress-bar">
-                            <div className="progress-fill"></div>
-                        </div>
-
-                        <div className="tasks-list">
-                            {/* <!-- Completed Tasks --> */}
-                            <div className="task-item task-completed">
-                                <div className="checkmark">✓</div>
-                                <span>Edit heading text</span>
+                        <div className="progress-bar-data">
+                            <div className="complete-task">
+                                <ul className='complete'>
+                                    <li className='complete-li'>
+                                        <img src="check.svg" alt="" width='12px' height='12px' />
+                                        <p>Edit heading text</p>
+                                    </li>
+                                    <li className='complete-li'>
+                                        <img src="check.svg" alt="" width='12px' height='12px' />
+                                        <p>Update image</p>
+                                    </li>
+                                    <li className='complete-li'>
+                                        <img src="check.svg" alt="" width='12px' height='12px' />
+                                        <p>Edit paragraph text</p>
+                                    </li>
+                                    <li className='complete-li'>
+                                        <img src="check.svg" alt="" />
+                                        <p>Update Logo in the header</p>
+                                    </li>
+                                </ul>
                             </div>
-                            <div className="task-item task-completed">
-                                <div className="checkmark">✓</div>
-                                <span>Update image</span>
-                            </div>
-                            <div className="task-item task-completed">
-                                <div className="checkmark">✓</div>
-                                <span>Edit paragraph text</span>
-                            </div>
-                            <div className="task-item task-completed">
-                                <div className="checkmark">✓</div>
-                                <span>Update Logo in the header</span>
-                            </div>
-
-                            {/* <!-- Pending Tasks --> */}
-                            <div className="task-item">
-                                <div className="pending-circle"></div>
-                                <span className="task-pending">Update Social media</span>
-                            </div>
-                            <div className="task-item">
-                                <div className="pending-circle"></div>
-                                <span className="task-pending">Optimize site for google</span>
-                            </div>
-                            <div className="task-item">
-                                <div className="pending-circle"></div>
-                                <span className="task-pending">Go live</span>
+                            <div className="remaining-task">
+                                <ul>
+                                    <li className='pending'>
+                                        <img src="circle.svg" width='12px' height='12px' alt="" />
+                                        <p>Update Social Media</p>
+                                    </li>
+                                    <li className='pending'>
+                                        <img src="circle.svg" width='12px' height='12px' alt="" />
+                                        <p>Optimize site for google</p>
+                                    </li>
+                                    <li className='pending'>
+                                        <img src="circle.svg" width='12px' height='12px' alt="" />
+                                        <p>Go live</p>
+                                    </li>
+                                </ul>
                             </div>
                         </div>
                     </div>
+
+
                 </div>
             </div>
             {/* third part of airtrip  */}
             <div className="airtrip-third ">
-                <h1>hello third...</h1>
+                <div className="analytics-header">
+                    <p>Analytics</p>
+                    <ul className="pagination">
+                        <li>1W</li>
+                        <li className='active'>1M</li>
+                        <li>1Y</li>
+                        <li>All time</li>
+                        <li>Custom</li>
+                    </ul>
+                </div>
+                <div className="analytics-card">
+                    <div className="card">
+                        <div className="card-header">
+                            <p>Bookings</p>
+                            <div className="tooltip-wrapper">
+                                <img src="info-icon.svg" alt="" />
+                                <span className="tooltip">Track real-time booking updates and availability. Ensure seamless reservations, reduce cancellations, and enhance customer satisfaction. Monitor trends, manage schedules efficiently, and optimize occupancy rates. Stay informed about peak booking times and customer preferences to improve service and maximize revenue.</span>
+                            </div>
+                        </div>
+                        <div className="card-content">
+                            <div className="percentage">
+                                <span className='percentage-text'>2,450</span>
+                                <span className='percentage-highlight'>+ 4.3%</span>
+                            </div>
+                            <div className="analytics-result">
+                                <p><span className='highlights'>+2.3K</span>  Increase vs last month</p>
+                            </div>
+                        </div>
+                    </div>
+
+
+                    <div className="card">
+                        <div className="card-header">
+                            <p>Visitors</p>
+                            <div className="tooltip-wrapper">
+                                <img src="info-icon.svg" alt="" />
+                                <span className="tooltip">Your tooltip text here</span>
+                            </div>
+
+                        </div>
+                        <div className="card-content">
+                            <div className="percentage">
+                                <span className='percentage-text'>56,003</span>
+                                <span className='percentage-highlight'>+ 4.3%</span>
+                            </div>
+                            <div className="analytics-result">
+                                <p><span className='highlights'>+2.3K</span>  Increase vs last month</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div className="card">
+                        <div className="card-header">
+                            <p>Page view</p>
+                            <div className="tooltip-wrapper">
+                                <img src="info-icon.svg" alt="" />
+                                <span className="tooltip">Your tooltip text here</span>
+                            </div>
+                        </div>
+                        <div className="card-content">
+                            <div className="percentage">
+                                <span className='percentage-text'>56,054</span>
+                                <span className='percentage-highlight'>+ 4.3%</span>
+                            </div>
+                            <div className="analytics-result">
+                                <p><span className='highlights'>+2.3K</span>  Increase vs last month</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div className="card">
+                        <div className="card-header">
+                            <p>Conv. rate</p>
+                            <div className="tooltip-wrapper">
+                                <img src="info-icon.svg" alt="" />
+                                <span className="tooltip">Your tooltip text here</span>
+                            </div>
+                        </div>
+                        <div className="card-content">
+                            <div className="percentage">
+                                <span className='percentage-text'>2,450</span>
+                                <span className='percentage-highlight'>+ 4.3%</span>
+                            </div>
+                            <div className="analytics-result">
+                                <p><span className='highlights'>+2.3K</span>  Increase vs last month</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div className="card">
+                        <div className="card-header">
+                            <p>Users</p>
+                            <div className="tooltip-wrapper">
+                                <img src="info-icon.svg" alt="" />
+                                <span className="tooltip">Your tooltip text here</span>
+                            </div>
+                        </div>
+                        <div className="card-content">
+                            <div className="percentage">
+                                <span className='percentage-text'>2,450</span>
+                                <span className='percentage-highlight'>+ 4.3%</span>
+                            </div>
+                            <div className="analytics-result">
+                                <p><span className='highlights'>+2.3K</span>  Increase vs last month</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div className="card">
+                        <div className="card-header">
+                            <p>Sessions</p>
+                            <div className="tooltip-wrapper">
+                                <img src="info-icon.svg" alt="" />
+                                <span className="tooltip">Your tooltip text here</span>
+                            </div>
+                        </div>
+                        <div className="card-content">
+                            <div className="percentage">
+                                <span className='percentage-text'>2,450</span>
+                                <span className='percentage-highlight'>+ 4.3%</span>
+                            </div>
+                            <div className="analytics-result">
+                                <p><span className='highlights'>+2.3K</span>  Increase vs last month</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
             </div>
         </div>
     )
