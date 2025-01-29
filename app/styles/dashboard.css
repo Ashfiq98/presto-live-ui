@@ -376,14 +376,12 @@ nav {
 
 /* border :horizontal */
 .horizontal-border {
-    width: 668px;
-    height: 0px;
-    gap: 0px;
-    border: 0.5px 0px 0px 0px;
-    opacity: 0px;
-    margin: 5px 0px;
-
+    width: 654px;
+    border-top: 0.5px solid rgba(194, 189, 189, 0.5); /* Slightly transparent */
+    margin: 10px 0px 0px 0px;
+    box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.1); /* Adds a slight shadow effect */
 }
+
 
 .site-progress-details {
     width: 668px;
@@ -401,7 +399,7 @@ nav {
     width: 668px;
     height: 20px;
     gap: 20px;
-    opacity: 0px;
+    margin-top: 15px;
     align-items: center;
 
 }
@@ -445,9 +443,9 @@ nav {
 /* progress-bar-data */
 
 .progress-bar-data {
-    padding-top: 20px;
+    /* padding-top: 20px; */
     display: flex;
-    justify-content: space-between;
+    /* justify-content: space-between; */
     /* Ensures even spacing */
     align-items: center;
     /* Aligns items properly */
