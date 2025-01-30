@@ -1,11 +1,11 @@
 body {
     background: #F1F9F6;
-
 }
 
-/* common  */
-.container {
 
+/* common  */
+
+.container {
     width: 1008px;
     /* height: 678.6px; */
     top: 90px;
@@ -31,6 +31,7 @@ body {
 ul {
     list-style-type: none;
 }
+
 
 /* common */
 
@@ -75,9 +76,12 @@ nav {
     border-radius: 25.6px;
 }
 
+
 /* Navbar End*/
 
+
 /* Analytical Grid  start */
+
 
 /* airtrip  */
 
@@ -113,7 +117,6 @@ nav {
     height: 11.92px;
     gap: 0px;
     opacity: 0px;
-
 }
 
 .left-airtrip p {
@@ -128,7 +131,6 @@ nav {
     text-align: left;
     text-underline-position: from-font;
     text-decoration-skip-ink: none;
-
 }
 
 .right-airtrip {
@@ -137,7 +139,6 @@ nav {
     padding: 10px 20px 5px 20px;
     gap: 15px;
     opacity: 0px;
-
 }
 
 .right-airtrip p {
@@ -153,21 +154,20 @@ nav {
     text-underline-position: from-font;
     text-decoration-skip-ink: none;
     /* background: #475467; */
-
-
 }
 
 
 /* airtrip-second */
+
 .airtrip-second {
     display: flex;
     width: 100%;
     height: 250px;
     border-radius: 12px;
-
     margin-top: 30px;
     margin-bottom: 30px;
 }
+
 
 /* .website-demo {
     display: flex;
@@ -178,7 +178,9 @@ nav {
     border-radius: 9.6px 0px 0px 9.6px;
 } */
 
+
 /* carousel */
+
 .website-demo {
     display: flex;
     width: 430px;
@@ -242,7 +244,6 @@ nav {
     background: white;
 }
 
-
 .site {
     width: 708px;
     height: 249.6px;
@@ -250,7 +251,6 @@ nav {
     gap: 15px;
     opacity: 0px;
     /* background: red; */
-
 }
 
 .site-header {
@@ -267,12 +267,10 @@ nav {
 .website {
     display: flex;
     justify-content: space-between;
-
     width: 158px;
     height: 28px;
     gap: 10px;
     opacity: 0px;
-
 }
 
 .website p {
@@ -280,7 +278,6 @@ nav {
     height: 28px;
     gap: 0px;
     opacity: 0px;
-
     font-family: Inter;
     font-size: 18px;
     font-weight: 600;
@@ -288,7 +285,6 @@ nav {
     text-align: left;
     text-underline-position: from-font;
     text-decoration-skip-ink: none;
-
 }
 
 .website a {
@@ -296,7 +292,6 @@ nav {
     height: 20px;
     gap: 0px;
     opacity: 0px;
-
     font-family: Inter;
     font-size: 14px;
     font-weight: 400;
@@ -304,9 +299,6 @@ nav {
     text-align: left;
     text-underline-position: from-font;
     text-decoration-skip-ink: none;
-
-
-
 }
 
 .website>section {
@@ -321,7 +313,6 @@ nav {
     height: 36px;
     gap: 10px;
     opacity: 0px;
-
 }
 
 .edit-btn img {
@@ -333,7 +324,8 @@ nav {
     border: 1.67px 0px 0px 0px;
     opacity: 0px;
     align-items: center;
-    margin-right: 10px;
+    margin-right: 8px;
+    margin-top: 3px;
 }
 
 .edit-btn {
@@ -352,7 +344,8 @@ nav {
     cursor: pointer;
 }
 
-.more-btn {
+
+/* .more-btn {
     padding-top: 5px;
     width: 30px;
     height: 30px;
@@ -362,7 +355,70 @@ nav {
     border: none;
     background: none;
     cursor: pointer;
-    ;
+} */
+
+.more-btn {
+    padding-top: 5px;
+    width: 30px;
+    height: 30px;
+    gap: 10px;
+    border-radius: 6px 0px 0px 0px;
+    border: none;
+    background: none;
+    cursor: pointer;
+    position: relative;
+    /* Needed for dropdown positioning */
+}
+
+
+/* Ensure the icon is properly sized */
+
+.more-btn img {
+    width: 22px;
+    height: 22px;
+}
+
+
+/* Dropdown menu */
+
+.more-btn .dropdown {
+    position: absolute;
+    top: 100%;
+    /* Aligns dropdown below the button */
+    right: 0;
+    background: white;
+    border: 1px solid #ddd;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    padding: 8px 0;
+    list-style: none;
+    min-width: 120px;
+    display: none;
+    border-radius: 6px;
+    z-index: 100;
+}
+
+
+/* Show dropdown when hovering or focusing on the button */
+
+.more-btn:hover .dropdown {
+    display: block;
+}
+
+
+/* Dropdown items */
+
+.dropdown li {
+    padding: 8px 12px;
+}
+
+.dropdown li a {
+    text-decoration: none;
+    color: black;
+    display: block;
+}
+
+.dropdown li:hover {
+    background: #f1f1f1;
 }
 
 .more-btn img {
@@ -370,18 +426,19 @@ nav {
     height: 22.24px;
     gap: 0px;
     opacity: 0px;
-
 }
 
 
 /* border :horizontal */
+
 .horizontal-border {
     width: 654px;
-    border-top: 0.5px solid rgba(194, 189, 189, 0.5); /* Slightly transparent */
+    border-top: 0.5px solid rgba(194, 189, 189, 0.5);
+    /* Slightly transparent */
     margin: 10px 0px 0px 0px;
-    box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.1); /* Adds a slight shadow effect */
+    box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.1);
+    /* Adds a slight shadow effect */
 }
-
 
 .site-progress-details {
     width: 668px;
@@ -390,8 +447,6 @@ nav {
     border-radius: 8px 0px 0px 0px;
     opacity: 0px;
     /* background: #FCFCFD; */
-
-
 }
 
 .progress-bar-details {
@@ -401,7 +456,6 @@ nav {
     gap: 20px;
     margin-top: 15px;
     align-items: center;
-
 }
 
 .progress-bar-details p {
@@ -416,7 +470,6 @@ nav {
     text-align: left;
     text-underline-position: from-font;
     text-decoration-skip-ink: none;
-
 }
 
 .progress-bar {
@@ -437,8 +490,8 @@ nav {
     border-radius: 4px 0px 0px 0px;
     opacity: 0px;
     background: #2AD8A7;
-
 }
+
 
 /* progress-bar-data */
 
@@ -455,7 +508,6 @@ nav {
     height: 112px;
     gap: 15px;
     opacity: 0px;
-
 }
 
 .complete-task {
@@ -484,8 +536,6 @@ height: Hug (22px)px; */
     border-radius: 16px;
     opacity: 0px;
     background: #F1F9F6;
-
-
 }
 
 .complete-li p {
@@ -531,13 +581,14 @@ height: Hug (22px)px; */
     text-align: center;
     text-underline-position: from-font;
     text-decoration-skip-ink: none;
-
 }
+
 
 /* airtrip-second end */
 
 
 /* airtrip-third */
+
 .airtrip-third {
     width: 100%;
     height: 333px;
@@ -558,7 +609,6 @@ height: Hug (22px)px; */
     opacity: 0px;
     margin-bottom: 10px;
     /* background: red; */
-
 }
 
 .analytics-header p {
@@ -573,7 +623,6 @@ height: Hug (22px)px; */
     text-align: left;
     text-underline-position: from-font;
     text-decoration-skip-ink: none;
-
 }
 
 .pagination {
@@ -596,7 +645,6 @@ height: Hug (22px)px; */
     text-align: left;
     text-underline-position: from-font;
     text-decoration-skip-ink: none;
-
 }
 
 .active {
@@ -627,7 +675,6 @@ height: Hug (22px)px; */
     padding: 15px 20px;
     border-radius: 12px;
     /* background: red; */
-
 }
 
 .card-header {
@@ -648,7 +695,6 @@ height: Hug (22px)px; */
     text-align: left;
     text-underline-position: from-font;
     text-decoration-skip-ink: none;
-
 }
 
 .card-header img {
@@ -660,10 +706,8 @@ height: Hug (22px)px; */
     gap: 0px;
     border: 1.6px 0px 0px 0px;
     /* opacity: 0px; */
-
     gap: 0px;
     opacity: 0px;
-
 }
 
 .card-content {
@@ -671,7 +715,6 @@ height: Hug (22px)px; */
     height: 53px;
     gap: 5px;
     opacity: 0px;
-
 }
 
 .percentage {
@@ -682,7 +725,6 @@ height: Hug (22px)px; */
     height: 30px;
     gap: 8px;
     opacity: 0px;
-
 }
 
 .percentage-text {
@@ -697,7 +739,6 @@ height: Hug (22px)px; */
     text-align: left;
     text-underline-position: from-font;
     text-decoration-skip-ink: none;
-
 }
 
 .percentage-highlight {
@@ -719,7 +760,6 @@ height: Hug (22px)px; */
     text-align: left;
     text-underline-position: from-font;
     text-decoration-skip-ink: none;
-
 }
 
 .analytics-result {
@@ -734,15 +774,15 @@ height: Hug (22px)px; */
     text-align: left;
     text-underline-position: from-font;
     text-decoration-skip-ink: none;
-
 }
 
 .highlights {
     color: #027A48 !important;
-
 }
 
+
 /* airtrip third end */
+
 .conversion-chart {
     padding: 30px;
 }
@@ -764,12 +804,68 @@ height: Hug (22px)px; */
     text-align: left;
     text-underline-position: from-font;
     text-decoration-skip-ink: none;
+}
 
 
+/* ConversionChart.css */
+
+.chart-container {
+    width: 100%;
+    padding: 26px;
+    background-color: white;
+    border-radius: 8px;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+}
+
+.chart-header {
+    display: flex;
+    /* justify-content: space-between; */
+    align-items: center;
+    margin-bottom: 16px;
+    width: 158px;
+    height: 24px;
+    /* top: 829.6px;
+    left: 243px; */
+    gap: 10px;
+    opacity: 0px;
+    font-family: Inter;
+    font-size: 16px;
+    font-weight: 600;
+    line-height: 24px;
+    text-align: left;
+    text-underline-position: from-font;
+    text-decoration-skip-ink: none;
+}
+
+.chart-title {
+    font-size: 18px;
+    font-weight: 500;
+    color: #333;
+    margin: 0;
+}
+
+.toggle-button {
+    padding: 4px;
+    background: none;
+    border: none;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+.toggle-button:hover {
+    background-color: #f5f5f5;
+    border-radius: 4px;
+}
+
+.chart-wrapper {
+    height: 300px;
+    width: 100%;
+    position: relative;
 }
 
 
 /* Analytical Grid End */
+
 .tooltip-wrapper {
     position: relative;
     display: inline-block;
@@ -793,16 +889,16 @@ height: Hug (22px)px; */
     /* Changed from 50% to 0 */
     margin-top: 5px;
     /* Added margin for spacing */
-
     /* Remove transform since we want it aligned to the left */
     /* transform: translateX(-50%); */
-
     /* Add fade in animation */
     opacity: 0;
     transition: opacity 0.3s;
 }
 
+
 /* Adjust arrow position for lower right */
+
 .tooltip::before {
     content: "";
     position: absolute;
@@ -817,7 +913,9 @@ height: Hug (22px)px; */
     /* Adjusted for upward arrow */
 }
 
+
 /* Show tooltip on hover */
+
 .tooltip-wrapper:hover .tooltip {
     visibility: visible;
     opacity: 1;

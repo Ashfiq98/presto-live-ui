@@ -33,7 +33,7 @@ export default function AnalyticsGrid({ }: Props) {
                     <div className="carousel">
                         <div className="carousel-inner">
                             <div className="carousel-slide active">
-                                <img src="demo-home.png"alt="Demo 1" />
+                                <img src="demo-home.png" alt="Demo 1" />
                             </div>
                             <div className="carousel-slide">
                                 <img src="demo-home.png" alt="Demo 2" />
@@ -69,7 +69,13 @@ export default function AnalyticsGrid({ }: Props) {
                             </button>
                             <button className='more-btn'>
                                 <img src="more.svg" alt="" />
+                                <ul className="dropdown">
+    <li><a href="#">Edit</a></li>
+    <li><a href="#">Delete</a></li>
+    <li><a href="#">Share</a></li>
+  </ul>
                             </button>
+                            
                         </div>
 
                     </div>
